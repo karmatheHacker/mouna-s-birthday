@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mouna!</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            padding: 40px 30px;
+            text-align: center;
+            max-width: 400px;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: fadeInUp 1.2s ease-out 0.5s forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            color: #ff4e50;
+            font-size: 2.5em;
+            margin-bottom: 0.3em;
+            opacity: 0;
+            animation: fadeIn 1s ease 1.2s forwards;
+        }
+        h2 {
+            color: #f9d423;
+            margin-bottom: 1em;
+            opacity: 0;
+            animation: fadeIn 1s ease 1.5s forwards;
+        }
+        p {
+            font-size: 1.2em;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 1s ease 1.8s forwards;
+        }
+        .love {
+            margin-top: 2em;
+            font-size: 1.3em;
+            color: #ff4e50;
+            font-weight: bold;
+            letter-spacing: 1px;
+            opacity: 0;
+            animation: fadeIn 1s ease 2.1s forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .balloons {
+            position: relative;
+            height: 80px;
+            margin-bottom: 1em;
+        }
+        .balloon {
+            position: absolute;
+            font-size: 2.5em;
+            animation: float 4s ease-in-out infinite;
+        }
+        .balloon1 { left: 10px; animation-delay: 0s; }
+        .balloon2 { left: 60px; animation-delay: 1s; }
+        .balloon3 { left: 110px; animation-delay: 2s; }
+        .balloon4 { left: 160px; animation-delay: 1.5s; }
+        .balloon5 { left: 210px; animation-delay: 0.5s; }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-30px) scale(1.1); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="balloons">
+            <span class="balloon balloon1">🎈</span>
+            <span class="balloon balloon2">🎉</span>
+            <span class="balloon balloon3">🎂</span>
+            <span class="balloon balloon4">🥳</span>
+            <span class="balloon balloon5">🎁</span>
+        </div>
+        <h1>Happy Birthday, Mouna!</h1>
+        <h2>Wishing you a day filled with joy and laughter.</h2>
+        <p>May all your dreams come true and may happiness always find you. Have a fantastic birthday!</p>
+        <div class="love">Rabin loves you ❤️</div>
+    </div>
+</body>
+</html> 
